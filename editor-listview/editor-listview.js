@@ -1,4 +1,4 @@
-ui.addListView = function(parent, list, options, width, height) {
+ui.addEditorListView = function(parent, list, options, width, height) {
     return new ListView(parent, list, options, width, height);
 }
 
