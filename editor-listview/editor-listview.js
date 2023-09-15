@@ -1,5 +1,5 @@
 ui.addEditorListView = function(parent, list, options, width, height) {
-    return new ListView(parent, list, options, width, height);
+    return new ui.ListView(parent, list, options, width, height);
 }
 
 ui.ListView = class extends ui.Control

@@ -1,6 +1,8 @@
 # Editor ListView
 
-This is the listview use in DroidScript new Editor.
+This is the listview use in DroidScript new Editor. See the live preview [here](https://hamacjumar.github.io/ui-components/editor-listview/index.html).
+
+> As for the moment, this is only available in `"dark mode"`. Support for `"light mode"` is in the TODO list.
 
 ### How to use?
 
@@ -49,20 +51,29 @@ Each element in the list array is also an array. Below is the format of list arr
 | option | *string* | Available value is <br> `"noclick"`: Disable click for this item. |
 
 ## Examples
-
+See the live preview [here](https://hamacjumar.github.io/ui-components/editor-listview/index.html).
 ```javascript
+ui.script("../../editor-listview/editor-listview.js");
+
 class Main extends App
 {
     onStart() {
+
+        ui.setTheme("dark");
+
         this.main = ui.addLayout("main", "Linear", "VCenter,FillXY");
 
         var list = [
             ["favorite", "Favorites", "My favorite items", "more_vert"],
             ["delete", "Trash", "My deleted items", "clear"],
+            ["folder", "Folders", "My directories", "more_vert"],
+            ["favorite", "Favorites", "My favorite items", "more_vert"],
+            ["delete", "Trash", "My deleted items", "clear"],
             ["folder", "Folders", "My directories", "more_vert"]
         ];
 
-        this.lst = ui.ui.addEditorListView(this.main, list, "icon", 0.25, 0.8);
+        this.lst = ui.addEditorListView(this.main, list, "icon", 0.25, 0.8);
+        this.lst.backColor = "black";
     }
 }
 ```
