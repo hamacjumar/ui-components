@@ -1,5 +1,5 @@
 
-ui.script("../../editor-listview/editor-listview.js");
+ui.script("editor-listview.js");
 
 class Main extends App
 {
