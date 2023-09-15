@@ -53,7 +53,7 @@ Each element in the list array is also an array. Below is the format of list arr
 ## Examples
 See the live preview [here](https://hamacjumar.github.io/ui-components/editor-listview/index.html).
 ```javascript
-ui.script("../../editor-listview/editor-listview.js");
+ui.script("editor-listview.js");
 
 class Main extends App
 {
